@@ -1,0 +1,280 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>HAEGIN - 2024 Collection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;500;600;700&amp;family=Libre+Franklin:wght@300;400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#303032",
+                        "surface-bright": "#fbf9fa",
+                        "on-secondary-container": "#6f6351",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e4e2e3",
+                        "on-tertiary-container": "#7695aa",
+                        "surface-container-high": "#eae7e9",
+                        "on-surface-variant": "#44474c",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1b1b1d",
+                        "surface-tint": "#545f71",
+                        "on-primary-fixed-variant": "#3c4759",
+                        "surface": "#fbf9fa",
+                        "surface-container": "#f0edee",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#d4c4ae",
+                        "on-tertiary-fixed-variant": "#2b4a5c",
+                        "outline-variant": "#c5c6cd",
+                        "inverse-primary": "#bcc7dc",
+                        "tertiary-fixed-dim": "#abcbe1",
+                        "primary-fixed-dim": "#bcc7dc",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#8691a5",
+                        "surface-container-low": "#f6f3f4",
+                        "background": "#fbf9fa",
+                        "outline": "#75777d",
+                        "secondary": "#685d4b",
+                        "secondary-container": "#f1e0c9",
+                        "tertiary": "#001824",
+                        "on-surface": "#1b1b1d",
+                        "secondary-fixed": "#f1e0c9",
+                        "on-primary-fixed": "#111c2b",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#092d3e",
+                        "surface-dim": "#dcd9db",
+                        "inverse-on-surface": "#f3f0f1",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#d8e3f9",
+                        "primary": "#0a1525",
+                        "surface-variant": "#e4e2e3",
+                        "on-secondary-fixed-variant": "#504535",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#1f2a3a",
+                        "on-tertiary-fixed": "#001e2d",
+                        "tertiary-fixed": "#c7e7fd",
+                        "on-secondary-fixed": "#221a0c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "24px",
+                        "container-max": "1120px",
+                        "gutter": "32px",
+                        "section-gap": "128px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["\"Source Serif 4\""],
+                        "display-lg": ["\"Source Serif 4\""],
+                        "body-md": ["Libre Franklin"],
+                        "label-sm": ["Libre Franklin"],
+                        "body-lg": ["Libre Franklin"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "body-md": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .ken-burns {
+            animation: kenburns 10s ease-in-out infinite alternate;
+        }
+        @keyframes kenburns {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.08); }
+        }
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 0.8s ease-out forwards;
+        }
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+        
+        .product-card:hover .product-overlay {
+            opacity: 1;
+        }
+        .product-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        body {
+            background-color: #fbf9fa; /* Surface Bright */
+            color: #1b1b1d; /* On Surface */
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-lg">
+<div class="flex justify-between items-center px-margin-desktop py-6 w-full max-w-container-max mx-auto">
+<div class="font-display-lg text-display-lg font-semibold text-primary dark:text-primary-fixed tracking-tight">HAEGIN</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Brand</a>
+<a class="font-label-sm text-label-sm text-primary dark:text-primary-fixed border-b border-primary dark:border-primary-fixed pb-1" href="#">Collection</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Craft</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Lookbook</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Journal</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Inquiry</button>
+<button class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Class</button>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Header Section -->
+<header class="max-w-container-max mx-auto px-margin-desktop mb-16 fade-up">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg text-primary mb-4">2024 Collection</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    A dialogue between traditional silhouette and modern utilitarianism. Inspired by the quiet rhythm of everyday rituals, each piece is crafted to harbor long-lasting happiness and timeless elegance.
+                </p>
+</div>
+</header>
+<!-- Category Filter -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-24 fade-up stagger-1">
+<div class="flex flex-wrap gap-x-12 gap-y-4 border-b border-outline-variant pb-4">
+<button class="font-label-sm text-label-sm text-primary border-b-2 border-primary pb-4 -mb-[18px] transition-all">All</button>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary pb-4 transition-all">Outerwear</button>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary pb-4 transition-all">Dresses</button>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary pb-4 transition-all">Accessories</button>
+</div>
+</section>
+<!-- Product Bento Grid / Editorial Layout -->
+<section class="max-w-container-max mx-auto px-margin-desktop mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Item 1 -->
+<div class="md:col-span-7 product-card group relative overflow-hidden fade-up stagger-2">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-in-out" data-alt="A high-fashion editorial photograph of a woman wearing a minimalist, charcoal-grey wrap coat inspired by traditional Korean Hanbok. She is walking down a sunlit, cobblestone street in a modern city where glass skyscrapers meet traditional wooden architecture. The lighting is warm and natural, creating long shadows and a sense of calm sophistication in a light-mode color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3kCTva76ENBDbIMq_7FztvBWZA0_yfnDuin2t06cdRuvfbu6ykKPxXaYcXApu2179_UjCPgcn4JEHyOb_TQYvRT4CWpYbDr7d8hB5ybwBTPKhg1jpdeB53WqS8GaSzo1-x5JzGXod8A9GnyOL-fGm2SsYSYAELOe6pzE4EXmSnBKcAIxez63gOurPmVV7yxfC6QpRxVB4Bv0wnunDqWV_fdPlbO0JodNEpmN9f5lVB-_aeWdxEFtqSmTXRA2Wgxn_889LbYqE33Q">
+</div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 product-overlay transition-opacity duration-500 flex flex-col justify-end p-12">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Woolen Wrap Coat</h3>
+<p class="font-body-md text-body-md text-on-primary/80 mb-6">A fusion of ancestral form and contemporary wool textures.</p>
+<button class="w-fit px-8 py-3 border border-on-primary text-on-primary font-label-sm text-label-sm hover:bg-on-primary hover:text-primary transition-all duration-300">View Details</button>
+</div>
+<div class="mt-4 flex justify-between items-baseline">
+<span class="font-label-sm text-label-sm text-primary font-bold">01 — Outerwear</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Signature Silhouette</span>
+</div>
+</div>
+<!-- Tall Item 2 -->
+<div class="md:col-span-5 md:pt-24 product-card group relative overflow-hidden fade-up stagger-3">
+<div class="aspect-[3/4] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-in-out" data-alt="An editorial close-up of a woman from behind, wearing a cream-colored, floor-length hanbok-style dress made of raw silk. She stands inside a traditional wooden Korean house (hanbok) with translucent paper sliding doors. Soft, diffused daylight filters through the paper screens, casting gentle shadows. The aesthetic is extremely minimalist, premium, and calm, featuring a palette of ivory, warm wood tones, and soft beige." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEtfN5XdQ5TOGOqtAQCqdx7zegxib9fEk9tMepKtJJdoCPpiLLTfEoU0QbY6OUwIt2QopARSu0kcxBTo8jBT00zjMmeAXx6QFvHNQC2B-esu0LeaJgIc29-0avR2mZJ4rFvduVD_WE15sCnEMukEySWjrApGYyiSTi8a1qdFau8tWsiielJb22iNZfVr3-Tzh4Qn1WrCVIKKOCQsjeuQkvnChdVJEs8HL87-fFpeQDbdUFEwU2FAn3x0nu-F5h_T38TXfLo90nrMU">
+</div>
+<div class="absolute inset-0 bg-primary/20 opacity-0 product-overlay transition-opacity duration-500 flex flex-col justify-end p-10">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Heritage Silk Gown</h3>
+<button class="w-fit px-8 py-3 border border-on-primary text-on-primary font-label-sm text-label-sm hover:bg-on-primary hover:text-primary transition-all duration-300">View Details</button>
+</div>
+<div class="mt-4">
+<span class="font-label-sm text-label-sm text-primary font-bold">02 — Dresses</span>
+<h4 class="font-body-lg text-body-lg mt-2">Morning Mist Silk</h4>
+</div>
+</div>
+<!-- Small Grid Items -->
+<div class="md:col-span-4 product-card group relative overflow-hidden fade-up">
+<div class="aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-in-out" data-alt="A minimalist product shot of a high-quality leather handbag in a deep tan color, resting on a clean, light-colored stone surface. Beside it is a ceramic cup of tea. The scene is shot with high-key lighting, emphasizing clean lines and rich textures. The color palette is dominated by warm beige, soft ivory, and rich leather brown, reflecting a premium editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBURcBFMkkIj2kIRgrW0g_6WTmgcqRSE0EZi3VhwdFTPXuVLzrO1-Aq6izNraXAxvDUSvnScjrJ3wJMF27FsA95QkOWz8dVsE-u9T0qQ2q7J6xPqDml9aUb5r0RTPei6VJaeOZBbC4XTHUsV7Bdbn7bZPdb-yCOC1_d0FAL-LA2tKundlJ_oHQpd-JAMB5ygTFGS6T0WcBdlZjR5fiNTNjsQXEog18lFjim67u_8MS0ffeWOpI28Ro_PM2Zc1XKqiyJBTVRBajZgGo">
+</div>
+<div class="mt-4">
+<span class="font-label-sm text-label-sm text-primary font-bold">03 — Accessories</span>
+<h4 class="font-body-lg text-body-lg mt-1">Ritual Carryall</h4>
+</div>
+</div>
+<div class="md:col-span-4 product-card group relative overflow-hidden fade-up stagger-1">
+<div class="aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-in-out" data-alt="A detailed shot of a fabric swatch showing the intricate weave of a premium linen and cotton blend in a soft dove grey. The lighting is directional, creating subtle highlights and deep shadows within the texture of the weave. The overall mood is tactile, calm, and grounded in quality craftsmanship, perfect for a high-end clothing brand journal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwGgN0NWya2fY-QTdOdXxaPyV7h_gMu9tmrdQSXrKVWG9IZp3eWOeYSo0abRdCyhWSTh9S1ujrz0JObwMesTYyh-ZlCIYdcou2hq1zy3vVmovs883PFoDe1hHl-YI1f_vVIwlbe_KsnsQuEiNqp6wWDkS2sySHo9mX_31ArW64g2mHbUbNEzSi-8_CYPa6PycPzQUGbYgEi2FuS6-VTOWNVEX7i7Fx6vgQvtZw7KI6KYgsP5tZ5BQdbS09LztWB-dutScXXxVI7co">
+</div>
+<div class="mt-4">
+<span class="font-label-sm text-label-sm text-primary font-bold">04 — Textile</span>
+<h4 class="font-body-lg text-body-lg mt-1">Grained Linen Shell</h4>
+</div>
+</div>
+<div class="md:col-span-4 product-card group relative overflow-hidden fade-up stagger-2">
+<div class="aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-in-out" data-alt="A low-angle shot of a woman's feet walking in minimalist black leather loafers on a paved stone pathway. She is wearing charcoal grey tailored trousers. The lighting is the golden hour of sunset, casting warm highlights on the leather and the stone textures. The composition is clean and focused on the movement and the quality of the materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADme0tvflqU6a5P1XXDJLuMTxgInG1FmDNMB7kDzFy79fljLZybdgESN6DYxTFWZLTqACoxObF0xwu7PEdHE3OE6WBsXzwDIkVYpuOgrlq0mT0TiZbb9IBcpvGCd6r5gmkWUQ4IkVXgl7HOf6bAD9nv3TAEnamJvwJhbNamsZ4BhK2NA32s7HR8kLAvdizdARso6BBfp0GFR-GI9ThwEkbGNOv3bFItCcmY6xJNH_wMof-Hcw84Yzn_lQB0aB3AUm8zK8WWu9iSRQ">
+</div>
+<div class="mt-4">
+<span class="font-label-sm text-label-sm text-primary font-bold">05 — Footwear</span>
+<h4 class="font-body-lg text-body-lg mt-1">City Walk Loafer</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Journal Section -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<div class="max-w-xl mx-auto">
+<h2 class="font-display-lg text-display-lg text-primary mb-6">Stay with the Tradition</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Join our journal for seasonal lookbooks and stories of craftsmanship.</p>
+<form class="flex flex-col md:flex-row gap-4 items-center">
+<input class="w-full bg-transparent border-0 border-b border-outline py-4 focus:ring-0 focus:border-primary font-body-md text-body-md placeholder:text-outline-variant" placeholder="Email Address" type="email">
+<button class="w-full md:w-auto px-12 py-4 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:bg-on-surface-variant transition-colors duration-300">Subscribe</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-low dark:bg-surface-container-highest border-t border-outline-variant dark:border-outline">
+<div class="flex flex-col items-center text-center px-margin-desktop space-y-8 max-w-container-max mx-auto">
+<div class="font-display-lg text-display-lg font-semibold text-primary dark:text-primary-fixed mb-4">HAEGIN</div>
+<div class="flex flex-wrap justify-center gap-x-12 gap-y-4">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary underline decoration-1 underline-offset-4 transition-all duration-300" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary underline decoration-1 underline-offset-4 transition-all duration-300" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary underline decoration-1 underline-offset-4 transition-all duration-300" href="#">Shipping</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary underline decoration-1 underline-offset-4 transition-all duration-300" href="#">Returns</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary underline decoration-1 underline-offset-4 transition-all duration-300" href="#">Sustainability</a>
+</div>
+<div class="flex space-x-6 text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant/60">
+                © 2024 HAEGIN. Clothes for long-lasting happiness.
+            </p>
+</div>
+</footer>
+<script>
+        // Reveal elements on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
+</body></html>
