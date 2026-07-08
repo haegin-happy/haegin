@@ -15,6 +15,7 @@ Google Stitch / AI Studio export migrated into a Next.js App Router project.
 - `/brand`
 - `/collection`
 - `/login`
+- `/signup`
 - `/kr/brand`
 - `/kr/collection`
 - `/kr/login`
@@ -33,6 +34,17 @@ Open `http://localhost:3000`.
 ```bash
 npm run build
 ```
+
+## Turso
+
+Set these environment variables locally and on Vercel:
+
+```env
+TURSO_VALUE_URL=libsql://your-database-name-your-org.turso.io
+TURSO_CURRENT_AUTH_TOKEN=your-turso-auth-token
+```
+
+The members table schema is available at `docs/turso-members-schema.sql`.
 
 ## Migration Principle
 
