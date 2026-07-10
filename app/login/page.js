@@ -1,5 +1,5 @@
-import StitchFrame from '../stitch-frame';
+import LoginForm from './login-form';
 
 export default function LoginPage() {
-  return <StitchFrame page="login" />;
+  return <LoginForm locale="en" />;
 }

@@ -1,5 +1,5 @@
-import StitchFrame from '../../stitch-frame';
+import LoginForm from '../../login/login-form';
 
 export default function KoreanLoginPage() {
-  return <StitchFrame page="kr-login" />;
+  return <LoginForm locale="ko" />;
 }
